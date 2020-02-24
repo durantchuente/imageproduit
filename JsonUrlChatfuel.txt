@@ -1,0 +1,16 @@
+{
+ "messenger_user_id": "{{messenger user id}}",
+ "first_name": "{{first name}}",
+ "last_name": "{{last name}}",
+ "gender": "{{gender}}",
+ "profile_pic_url": "{{profile pic url}}",
+ "timezone": "{{timezone}}",
+ "locale": "{{locale}}",
+ "source": "{{source}}",
+ "last_seen": "{{last seen}}",
+ "signed_up": "{{signed up}}",
+ "sessions": {{sessions}},
+ "last_visited_block_name": "{{last visited block name}}",
+ "last_visited_block_id": "{{last visited block id}}",
+ "last_clicked_button_name": "{{last clicked button name}}"
+}
