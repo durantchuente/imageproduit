@@ -133,7 +133,7 @@ function display_products(id_produit_index,produits) {
                 if(6!=id_produit_index+1){
                     kota++;
                     console.log("kota= "+kota);
-                    
+                    console.log(id_produit_index);
                     display_products(id_produit_index+1,produits)
                     
                     
