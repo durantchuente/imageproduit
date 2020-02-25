@@ -13,7 +13,7 @@ let rep_json={};
 let compteur;
 const ngrok="https://5efd1ec8.ngrok.io";
 var nrc = require('node-run-cmd');
-
+var conte=0;
 
 // Application Port (Default = 8080)
 const PORT = process.env.PORT || 8080;
@@ -44,7 +44,7 @@ app.post('/chatfuel', function (req, res) {
     //console.log(names)
 
     if(last_button = "produits"){
-        compteur=0;
+        //compteur=0;
         GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
 	
 		  var produits = data.products;
@@ -106,16 +106,10 @@ function display_products(id_produit_index,produits) {
                 };
         
                 jso.push(the_response);
-                
-                //console.log(produit.product.images.image);
-                
-
-                if(6!=id_produit_index+1){
-                    console.log("hey");
-                    display_products(id_produit_index+1,produits)
-                }else{
+                conte++;
+                if(conte=6){
                     var fin = {
-                        "title":"",
+                        "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
                         "subtitle":"Size: M",
                         "buttons":[
@@ -126,7 +120,17 @@ function display_products(id_produit_index,produits) {
                             }
                         ]
                     };
-                    jso.push(fin)
+                    jso.push(fin);
+                    conte=0;
+                }
+                //console.log(produit.product.images.image);
+                
+
+                if(6!=id_produit_index+1){
+                    console.log("hey");
+                    display_products(id_produit_index+1,produits)
+                }else{
+                    
 
                     cmd.execFile('command.bat');
                     
