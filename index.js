@@ -118,6 +118,7 @@ function display_products(id_produit_index,produits, arret) {
                 jso.push(the_response);
                 
                 if(kota==arret){
+                    console.log("moula");
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
