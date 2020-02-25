@@ -113,49 +113,29 @@ function display_products(id_produit_index,produits) {
                     console.log("hey");
                     display_products(id_produit_index+1,produits)
                 }else{
+
+                    // var fin = {
+                    //     "title":"",
+                    //     "image_url":"https://github.com/durantchuente/imageproduit/raw/master/image/"+id_produit+".jpg",
+                    //     "subtitle":"Size: M",
+                    //     "buttons":[
+                    //         {
+                    //         "type":"web_url",
+                    //         "url":"https://rockets.chatfuel.com/store",
+                    //         "title":"View Item",
+                    //         "buttons":[
+                    //             {
+                    //             "type":"web_url",
+                    //             "url":"https://rockets.chatfuel.com/store",
+                    //             "title":"Plus"
+                    //             }
+                    //             ]
+                    //         }
+                    //     ]
+                    // };
+
                     cmd.execFile('command.bat');
-                    //nrc.run('dir');
-                        // exec('git add -A', (error, stdout, stderr) => {
-                        //     if (error) {
-                        //         console.log(`error: ${error.message}`);
-                        //         return;
-                        //     }
-                        //     if (stderr) {
-                        //         console.log(`stderr: ${stderr}`);
-                        //         return;
-                        //     }
-                        //     console.log(`stdout: ${stdout}`);
-                            
-                        // });
-
-                        // exec('git commit -m "cest bon" ', (error, stdout, stderr) => {
-                        //     if (error) {
-                        //         console.log(`error: ${error.message}`);
-                        //         return;
-                        //     }
-                        //     if (stderr) {
-                        //         console.log(`stderr: ${stderr}`);
-                        //         return;
-                        //     }
-                        //     console.log(`stdout: ${stdout}`);
-                            
-                        // });
-
-                        // exec('git push', (error, stdout, stderr) => {
-                        //     if (error) {
-                        //         console.log(`error: ${error.message}`);
-                        //         return;
-                        //     }
-                        //     if (stderr) {
-                        //         console.log(`stderr: ${stderr}`);
-                        //         return;
-                        //     }
-                        //     console.log(`stdout: ${stdout}`);
-                            
-                        // });
-                      //  compteur=1
-                    //}
-                    //if(compteur!=0){
+                    
                         console.log("lance");
                         //console.log(jso);
                         var final_response = {
