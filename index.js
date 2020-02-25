@@ -115,7 +115,7 @@ function display_products(id_produit_index,produits) {
                         "buttons":[
                             {
                             "type":"web_url",
-                            "url":"https://m.me/ricktchuente?ref=produits",
+                            "url":last_button,
                             "title":"Plus"
                             }
                         ]
