@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.get('/', function (req, res) {
     res.send('Nothing to see here.');
 });
-
+conte=0;
 // Method to handle a post request from Chatfuel
 app.post('/chatfuel', function (req, res) {
     
@@ -42,7 +42,7 @@ app.post('/chatfuel', function (req, res) {
     console.log(data)
     
     //console.log(names)
-conte=0;
+
     if(last_button = "produits"){
         
         //compteur=0;
