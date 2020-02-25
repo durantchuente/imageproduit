@@ -133,9 +133,11 @@ function display_products(id_produit_index,produits) {
 
                 if(6!=id_produit_index+1){
                     console.log("hey");
-                    display_products(id_produit_index+1,produits)
                     conte=conte+1
                     console.log("conte = "+conte);
+                    display_products(id_produit_index+1,produits)
+                    
+                    
                 }else{
                     
 
