@@ -116,7 +116,8 @@ function display_products(id_produit_index,produits, arret) {
                 };
         
                 jso.push(the_response);
-                
+                console.log("koter ="+kota);
+                console.log("arret ="+arret);
                 if(kota==arret){
                     console.log("moula");
                     var fin = {
