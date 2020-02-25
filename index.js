@@ -73,10 +73,18 @@ app.post('/chatfuel', function (req, res) {
 		})
     }
 
+    if(last_button="Plus"){
+        GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
+	    
+		  var produits = data.products;
+        display_products(kota+1,produits)
+    })
+    }
+
 
 function display_products(id_produit_index,produits) {
     
-    kota=0;
+    kota++;
     var id_produit = produits[id_produit_index].id;
     // a=id_produit;
     GetJson('http://localhost/prestashop/api/products/'+id_produit+'?ws_key='+tokenprestashop+'&output_format=JSON',function (err,produit) {
