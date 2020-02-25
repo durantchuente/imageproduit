@@ -10,10 +10,9 @@ const { exec } = require("child_process");
 var GetJson = require('get-json');
 var tokenprestashop = "K3RCRC22BBM3W2VBN6DXUZ1A175MZ93F";
 let rep_json={};
-let compteur;
 const ngrok="https://5efd1ec8.ngrok.io";
 var nrc = require('node-run-cmd');
-var conte;
+let kota;
 
 // Application Port (Default = 8080)
 const PORT = process.env.PORT || 8080;
@@ -27,7 +26,7 @@ app.use(bodyParser.json());
 app.get('/', function (req, res) {
     res.send('Nothing to see here.');
 });
-conte=0;
+kota=0;
 // Method to handle a post request from Chatfuel
 app.post('/chatfuel', function (req, res) {
     
@@ -109,8 +108,8 @@ function display_products(id_produit_index,produits) {
                 };
         
                 jso.push(the_response);
-                console.log(conte);
-                if(conte=6){
+                
+                if(kota=6){
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
@@ -126,15 +125,15 @@ function display_products(id_produit_index,produits) {
                     //console.log(conte);
                     console.log(id_produit_index);
                     jso.push(fin);
-                    conte=0;
+                    
                 }
                 //console.log(produit.product.images.image);
                 
 
                 if(6!=id_produit_index+1){
-                    console.log("hey");
-                    conte=conte+1
-                    console.log("conte = "+conte);
+                    kota++;
+                    console.log("kota= "+kota);
+                    
                     display_products(id_produit_index+1,produits)
                     
                     
@@ -172,7 +171,7 @@ function display_products(id_produit_index,produits) {
             })
             .catch((err) => console.error(err))		
           
-          console.log("c7 "+conte)
+
       
   })
 
