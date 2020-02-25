@@ -47,9 +47,10 @@ app.post('/chatfuel', function (req, res) {
         
         //compteur=0;
         GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
-	    conte=0;
+	    
 		  var produits = data.products;
-        
+        conte=0;
+        console.log("ici "+conte);
           //var rep_json ={};
 
         // for (let index = 0; index < produits.length; index++) {
@@ -166,7 +167,8 @@ function display_products(id_produit_index,produits) {
                 
             })
             .catch((err) => console.error(err))		
-          
+          conte=0;
+          console.log("c7 "+conte)
       
   })
 
