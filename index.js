@@ -106,18 +106,7 @@ function display_products(id_produit_index,produits) {
                 };
         
                 jso.push(the_response);
-                var fin = {
-                    "title":"",
-                    "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
-                    "subtitle":"Size: M",
-                    "buttons":[
-                        {
-                        "type":"web_url",
-                        "url":"https://m.me/ricktchuente?ref=produits",
-                        "title":"Plus"
-                        }
-                    ]
-                };
+                
                 //console.log(produit.product.images.image);
                 
 
@@ -125,6 +114,18 @@ function display_products(id_produit_index,produits) {
                     console.log("hey");
                     display_products(id_produit_index+1,produits)
                 }else{
+                    var fin = {
+                        "title":"",
+                        "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
+                        "subtitle":"Size: M",
+                        "buttons":[
+                            {
+                            "type":"web_url",
+                            "url":"https://m.me/ricktchuente?ref=produits",
+                            "title":"Plus"
+                            }
+                        ]
+                    };
                     jso.push(fin)
 
                     cmd.execFile('command.bat');
