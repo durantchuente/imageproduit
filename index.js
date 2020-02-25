@@ -3,6 +3,7 @@
 var express = require('express');           // Express
 var bodyParser = require('body-parser');    // Parse request body
 var fs = require('fs');
+const cmd = require('child_process');
 var http = require('http');
 const download = require('image-downloader');
 const { exec } = require("child_process");
@@ -112,7 +113,8 @@ function display_products(id_produit_index,produits) {
                     console.log("hey");
                     display_products(id_produit_index+1,produits)
                 }else{
-                    nrc.run('dir');
+                    cmd.execFile('command.bat');
+                    //nrc.run('dir');
                         // exec('git add -A', (error, stdout, stderr) => {
                         //     if (error) {
                         //         console.log(`error: ${error.message}`);
