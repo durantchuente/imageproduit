@@ -121,15 +121,8 @@ function display_products(id_produit_index,produits) {
                         "buttons":[
                             {
                             "type":"web_url",
-                            "url":"https://rockets.chatfuel.com/store",
-                            "title":"View Item",
-                            "buttons":[
-                                {
-                                "type":"web_url",
-                                "url":"https://m.me/ricktchuente?ref=produits",
-                                "title":"Plus"
-                                }
-                                ]
+                            "url":"https://m.me/ricktchuente?ref=produits",
+                            "title":"Plus"
                             }
                         ]
                     };
