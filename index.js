@@ -30,7 +30,7 @@ app.get('/', function (req, res) {
 
 // Method to handle a post request from Chatfuel
 app.post('/chatfuel', function (req, res) {
-    conte=0;
+    
     // Get post data from request body
     var data = req.body;
     var names = data;
@@ -44,9 +44,10 @@ app.post('/chatfuel', function (req, res) {
     //console.log(names)
 
     if(last_button = "produits"){
+        
         //compteur=0;
         GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
-	
+	    conte=0;
 		  var produits = data.products;
         
           //var rep_json ={};
