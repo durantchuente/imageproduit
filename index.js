@@ -169,7 +169,7 @@ function display_products(id_produit_index,produits) {
                 
             })
             .catch((err) => console.error(err))		
-          conte=0;
+          
           console.log("c7 "+conte)
       
   })
