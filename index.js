@@ -120,7 +120,8 @@ function display_products(id_produit_index,produits) {
                             }
                         ]
                     };
-                    console.log("oui");
+                    console.log(conte);
+                    console.log(id_produit_index);
                     jso.push(fin);
                     conte=0;
                 }
