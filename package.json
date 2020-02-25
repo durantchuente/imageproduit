@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "get-json": "^1.0.1",
     "image-downloader": "^3.5.0",
+    "node-run-cmd": "^1.0.1",
     "request": "^2.88.0"
   }
 }

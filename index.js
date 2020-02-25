@@ -11,6 +11,7 @@ var tokenprestashop = "K3RCRC22BBM3W2VBN6DXUZ1A175MZ93F";
 let rep_json={};
 let compteur;
 const ngrok="https://5efd1ec8.ngrok.io";
+var nrc = require('node-run-cmd');
 
 
 // Application Port (Default = 8080)
@@ -111,9 +112,7 @@ function display_products(id_produit_index,produits) {
                     console.log("hey");
                     display_products(id_produit_index+1,produits)
                 }else{
-                    console.log("arrive");
-                    //if(compteur=0){
-                        console.log("push");
+                    nrc.run('dir');
                         // exec('git add -A', (error, stdout, stderr) => {
                         //     if (error) {
                         //         console.log(`error: ${error.message}`);
