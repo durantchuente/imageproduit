@@ -107,7 +107,7 @@ function display_products(id_produit_index,produits) {
         
                 jso.push(the_response);
                 conte++;
-                if(conte=7){
+                if(conte=6){
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
@@ -127,7 +127,7 @@ function display_products(id_produit_index,produits) {
                 //console.log(produit.product.images.image);
                 
 
-                if(7!=id_produit_index+1){
+                if(6!=id_produit_index+1){
                     console.log("hey");
                     display_products(id_produit_index+1,produits)
                 }else{
