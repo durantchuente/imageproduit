@@ -42,7 +42,7 @@ app.post('/chatfuel', function (req, res) {
     
     //console.log(names)
 
-    if(last_button = "produits"){
+    if(last_button == "produits"){
         
         //compteur=0;
         GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
@@ -73,7 +73,7 @@ app.post('/chatfuel', function (req, res) {
 		})
     }
 
-    // if(last_button="Plus"){
+    // if(last_button=="Plus"){
     //     GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
 	    
 	// 	  var produits = data.products;
@@ -117,7 +117,7 @@ function display_products(id_produit_index,produits) {
         
                 jso.push(the_response);
                 
-                if(kota>7){
+                if(kota==5){
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
