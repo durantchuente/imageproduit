@@ -107,7 +107,7 @@ function display_products(id_produit_index,produits) {
         
                 jso.push(the_response);
                 conte++;
-                if(conte>5){
+                if(conte=6){
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
