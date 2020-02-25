@@ -13,7 +13,7 @@ let rep_json={};
 let compteur;
 const ngrok="https://5efd1ec8.ngrok.io";
 var nrc = require('node-run-cmd');
-var conte=0;
+var conte;
 
 // Application Port (Default = 8080)
 const PORT = process.env.PORT || 8080;
@@ -30,7 +30,7 @@ app.get('/', function (req, res) {
 
 // Method to handle a post request from Chatfuel
 app.post('/chatfuel', function (req, res) {
-
+    conte=0;
     // Get post data from request body
     var data = req.body;
     var names = data;
