@@ -50,7 +50,7 @@ app.post('/chatfuel', function (req, res) {
 	    
 		  var produits = data.products;
         conte=0;
-        console.log("ici "+conte);
+        //console.log("ici "+conte);
           //var rep_json ={};
 
         // for (let index = 0; index < produits.length; index++) {
@@ -109,7 +109,7 @@ function display_products(id_produit_index,produits) {
                 };
         
                 jso.push(the_response);
-                
+                console.log(conte);
                 if(conte=6){
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
@@ -123,7 +123,7 @@ function display_products(id_produit_index,produits) {
                             }
                         ]
                     };
-                    console.log(conte);
+                    //console.log(conte);
                     console.log(id_produit_index);
                     jso.push(fin);
                     conte=0;
