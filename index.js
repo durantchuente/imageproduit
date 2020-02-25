@@ -121,7 +121,7 @@ function display_products(id_produit_index,produits) {
                 //console.log(produit.product.images.image);
                 
 
-                if(7!=id_produit_index+1){
+                if(6!=id_produit_index+1){
                     console.log("hey");
                     display_products(id_produit_index+1,produits)
                 }else{
