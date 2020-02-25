@@ -111,11 +111,11 @@ function display_products(id_produit_index,produits) {
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
-                        "subtitle":"Size: M",
+                        "subtitle":"Size: L",
                         "buttons":[
                             {
                             "type":"web_url",
-                            "url":last_button,
+                            "url":"https://m.me/ricktchuente?ref=produits",
                             "title":"Plus"
                             }
                         ]
