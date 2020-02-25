@@ -74,10 +74,11 @@ app.post('/chatfuel', function (req, res) {
     }
 
     if(last_button=="Plus"){
+        console.log("plus");
         GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
 	    
           var produits = data.products;
-          console.log("plus");
+          
         display_products(kota+1,produits,kota+7)
     })
     }
