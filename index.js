@@ -82,7 +82,7 @@ app.post('/chatfuel', function (req, res) {
     }
 
 
-function display_products(id_produit_index,produits, arret) {
+function display_products(id_produit_index,produits,arret) {
     
     kota++;
     var id_produit = produits[id_produit_index].id;
@@ -144,7 +144,7 @@ function display_products(id_produit_index,produits, arret) {
                     
                     console.log("kota= "+kota);
                     console.log(id_produit_index);
-                    display_products(id_produit_index+1,produits)
+                    display_products(id_produit_index+1,produits,arret)
                     
                     
                 }else{
