@@ -90,6 +90,7 @@ function display_products(id_produit_index,produits) {
       download.image(options)
             .then(({ filename, image }) => {
                 console.log(produit.product.name);
+                conte=conte+1;
                    //bot.sendPhoto(chatId,__dirname+'/image/'+id_produit+'.jpg',{caption : produit.product.name + "\n PRIX : "+produit.product.price.toString().replace('.000000','')+" Fcfa" + "\n Pour plus d'infos sur le produit tapez /"+id_produit} );
                    //console.log("hiy");
                    var the_response = {
@@ -106,7 +107,7 @@ function display_products(id_produit_index,produits) {
                 };
         
                 jso.push(the_response);
-                conte++;
+                
                 if(conte=6){
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
