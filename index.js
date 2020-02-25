@@ -42,14 +42,14 @@ app.post('/chatfuel', function (req, res) {
     console.log(data)
     
     //console.log(names)
-
+conte=0;
     if(last_button = "produits"){
         
         //compteur=0;
         GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
 	    
 		  var produits = data.products;
-        conte=0;
+        
         //console.log("ici "+conte);
           //var rep_json ={};
 
@@ -135,6 +135,7 @@ function display_products(id_produit_index,produits) {
                     console.log("hey");
                     display_products(id_produit_index+1,produits)
                     conte=conte+1
+                    console.log("conte = "+conte);
                 }else{
                     
 
