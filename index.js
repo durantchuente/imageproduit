@@ -117,7 +117,7 @@ function display_products(id_produit_index,produits) {
         
                 jso.push(the_response);
                 
-                if(kota==5){
+                if(kota==6){
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
