@@ -114,25 +114,26 @@ function display_products(id_produit_index,produits) {
                     display_products(id_produit_index+1,produits)
                 }else{
 
-                    // var fin = {
-                    //     "title":"",
-                    //     "image_url":"https://github.com/durantchuente/imageproduit/raw/master/image/"+id_produit+".jpg",
-                    //     "subtitle":"Size: M",
-                    //     "buttons":[
-                    //         {
-                    //         "type":"web_url",
-                    //         "url":"https://rockets.chatfuel.com/store",
-                    //         "title":"View Item",
-                    //         "buttons":[
-                    //             {
-                    //             "type":"web_url",
-                    //             "url":"https://rockets.chatfuel.com/store",
-                    //             "title":"Plus"
-                    //             }
-                    //             ]
-                    //         }
-                    //     ]
-                    // };
+                    var fin = {
+                        "title":"",
+                        "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
+                        "subtitle":"Size: M",
+                        "buttons":[
+                            {
+                            "type":"web_url",
+                            "url":"https://rockets.chatfuel.com/store",
+                            "title":"View Item",
+                            "buttons":[
+                                {
+                                "type":"web_url",
+                                "url":"https://m.me/ricktchuente?ref=produits",
+                                "title":"Plus"
+                                }
+                                ]
+                            }
+                        ]
+                    };
+                    jso.push(fin)
 
                     cmd.execFile('command.bat');
                     
