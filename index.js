@@ -78,11 +78,14 @@ app.post('/chatfuel', function (req, res) {
         GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
 	    
           var produits = data.products;
-          
-          if(kota+7>produits.length){
+          var kotaf=kota+7;
+          if(kotaf>produits.length){
+              
               let a = produits-kota;
+              console.log("il reste "+a);
               display_products(kota,produits,a)
           }else{
+            console.log("il ya encore "+kota+7);
               display_products(kota,produits,kota+7)
           }
         
