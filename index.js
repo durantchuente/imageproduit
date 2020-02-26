@@ -43,7 +43,7 @@ app.post('/chatfuel', function (req, res) {
     //console.log(names)
 
     if(last_button == "produits"){
-        
+        kota=0;
         //compteur=0;
         GetJson('http://localhost/prestashop/api/products?sort=id_asc&ws_key='+tokenprestashop+'&output_format=JSON',function (err,data) {
 	    
