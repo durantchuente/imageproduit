@@ -141,44 +141,45 @@ function display_products(id_produit_index,produits,arret) {
                 }
                 //console.log(produit.product.images.image);
                 
+                if(kota!=produits.length){
 
-                if(arret!=id_produit_index+1){
-                    
-                    //console.log("kota= "+kota);
-                    console.log(id_produit_index);
-                    display_products(id_produit_index+1,produits,arret)
-                    
-                    
-                }else{
-                    
-
-                    cmd.execFile('command.bat');
-                    
-                        console.log("lance");
-                        //console.log(jso);
-                        var final_response = {
-                             "messages": [
-                                 {
-                                     "attachment":{
-                                         "type":"template",
-                                         "payload":{
-                                             "template_type":"generic",
-                                             "image_aspect_ratio": "square",
-                                             "elements": jso
-                                         }
-                                     }
-                                 }
-                             ]
-                         }
-                    
-                         res.json(final_response);
-                    //}
-                    
-                    //if(id_produit_index=8){
+                    if(arret!=id_produit_index+1){
                         
-                     //}
-                }
+                        //console.log("kota= "+kota);
+                        console.log(id_produit_index);
+                        display_products(id_produit_index+1,produits,arret)
+                        
+                        
+                    }else{
+                        
 
+                        cmd.execFile('command.bat');
+                        
+                            console.log("lance");
+                            //console.log(jso);
+                            var final_response = {
+                                "messages": [
+                                    {
+                                        "attachment":{
+                                            "type":"template",
+                                            "payload":{
+                                                "template_type":"generic",
+                                                "image_aspect_ratio": "square",
+                                                "elements": jso
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        
+                            res.json(final_response);
+                        //}
+                        
+                        //if(id_produit_index=8){
+                            
+                        //}
+                    }
+                }
                 
             })
             .catch((err) => console.error(err))		
