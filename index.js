@@ -79,9 +79,10 @@ app.post('/chatfuel', function (req, res) {
 	    
           var produits = data.products;
           var kotaf=kota+7;
+          console.log("kotaf ="+kotaf);
           if(kotaf>produits.length){
               
-              let a = produits-kota;
+              let a = produits.length-kota;
               console.log("il reste "+a);
               display_products(kota,produits,a)
           }else{
