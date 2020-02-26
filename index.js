@@ -149,6 +149,8 @@ function display_products(id_produit_index,produits,arret) {
                     console.log(id_produit_index);
                     if(nbre_prod_final<6){
                         console.log("pas bon le truc "+nbre_prod_final)
+                        
+                    }else{
                         jso.push(fin);
                     }
                     
