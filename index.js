@@ -84,9 +84,9 @@ app.post('/chatfuel', function (req, res) {
               
               let a = produits.length-kota;
               console.log("il reste "+a);
-              display_products(kota,produits,a)
+              display_products(kota,produits,a-1)
           }else{
-            console.log("il ya encore "+kota+7);
+            console.log("il ya encore "+kotaf);
               display_products(kota,produits,kota+7)
           }
         
