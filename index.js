@@ -143,7 +143,14 @@ function display_products(id_produit_index,produits,arret) {
                             "type": "web_url",
                             "url": "https://rockets.chatfuel.com/store",
                             "messenger_extensions": true
+                            },
+                        "buttons":[
+                            {
+                            "type":"web_url",
+                            "url":"https://m.me/ricktchuente?ref=produits",
+                            "title":"Plus"
                             }
+                        ]
                     };
                     //console.log(conte);
                     console.log(id_produit_index);
