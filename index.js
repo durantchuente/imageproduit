@@ -35,7 +35,6 @@ app.post('/chatfuel', function (req, res) {
     var names = data;
     var last_button = data.last_clicked_button_name.toLowerCase();
     var message_recu = data.last_user_freeform_input;
-    let tab_prod;
     let nbre_prod_final = 0;
     var jso = [];
     console.log(data)
@@ -83,6 +82,7 @@ app.post('/chatfuel', function (req, res) {
           if(kotaf>produits.length){
               
               let a = produits.length-kota;
+              nbre_prod_final = produits.length-kota;
               let b=kota+a;
               console.log("il reste "+a);
               display_products(kota,produits,b)
@@ -147,7 +147,10 @@ function display_products(id_produit_index,produits,arret) {
                     };
                     //console.log(conte);
                     console.log(id_produit_index);
-                    jso.push(fin);
+                    if(nbre_prod_final<6){
+                        jso.push(fin);
+                    }
+                    
                     
                 }
                 //console.log(produit.product.images.image);
