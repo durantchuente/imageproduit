@@ -66,7 +66,7 @@ app.post('/chatfuel', function (req, res) {
             
         // }
           
-          display_products(0,produits,6)
+          display_products(0,produits,7)
           
           
 
