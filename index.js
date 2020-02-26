@@ -149,7 +149,7 @@ function display_products(id_produit_index,produits,arret) {
                     };
                     //console.log(conte);
                     console.log(id_produit_index);
-                    if(nbre_prod_final<6){
+                    if(nbre_prod_final<7){
                         console.log("pas bon le truc "+nbre_prod_final)
                         
                     }else{
