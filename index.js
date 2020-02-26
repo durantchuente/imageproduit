@@ -120,7 +120,7 @@ function display_products(id_produit_index,produits,arret) {
                    var the_response = {
                     "title":produit.product.name,
                     "image_url":"https://github.com/durantchuente/imageproduit/raw/master/image/"+id_produit+".jpg",
-                    "subtitle":"Description: "+produit.product.description,
+                    "subtitle":"Description: "+produit.product.description.replace(/<(.|\n)*?>/g, ''),
                     "buttons":[
                         {
                         "type":"web_url",
