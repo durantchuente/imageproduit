@@ -120,7 +120,7 @@ function display_products(id_produit_index,produits,arret) {
                    var the_response = {
                     "title":produit.product.name,
                     "image_url":"https://github.com/durantchuente/imageproduit/raw/master/image/"+id_produit+".jpg",
-                    "subtitle":"Size: M",
+                    "subtitle":"Description: "+produit.product.description,
                     "buttons":[
                         {
                         "type":"web_url",
@@ -138,7 +138,7 @@ function display_products(id_produit_index,produits,arret) {
                     var fin = {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
-                        "subtitle":"Size: M",
+                        "subtitle":"",
                         "buttons":[
                             {
                             "type":"web_url",
