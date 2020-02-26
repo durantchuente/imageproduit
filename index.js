@@ -118,9 +118,9 @@ function display_products(id_produit_index,produits,arret) {
                    //bot.sendPhoto(chatId,__dirname+'/image/'+id_produit+'.jpg',{caption : produit.product.name + "\n PRIX : "+produit.product.price.toString().replace('.000000','')+" Fcfa" + "\n Pour plus d'infos sur le produit tapez /"+id_produit} );
                    //console.log("hiy");
                    var the_response = {
-                    "title":produit.product.name +"\n"+produit.product.description.replace(/<(.|\n)*?>/g, ''),
+                    "title":produit.product.name,
                     "image_url":"https://github.com/durantchuente/imageproduit/raw/master/image/"+id_produit+".jpg",
-                    "subtitle":"",
+                    "subtitle":"Description: "+produit.product.description.replace(/<(.|\n)*?>/g, ''),
                     "buttons":[
                         {
                         "type":"web_url",
@@ -139,13 +139,11 @@ function display_products(id_produit_index,produits,arret) {
                         "title":"cliquez ici pour voir plus d'articles",
                         "image_url":"https://github.com/durantchuente/imageproduit/raw/master/plus.jpg",
                         "subtitle":"",
-                        "buttons":[
-                            {
-                            "type":"web_url",
-                            "url":"https://m.me/ricktchuente?ref=produits",
-                            "title":"Plus"
+                        "default_action": {
+                            "type": "web_url",
+                            "url": "https://rockets.chatfuel.com/store",
+                            "messenger_extensions": true
                             }
-                        ]
                     };
                     //console.log(conte);
                     console.log(id_produit_index);
