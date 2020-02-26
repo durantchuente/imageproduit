@@ -118,9 +118,9 @@ function display_products(id_produit_index,produits,arret) {
                    //bot.sendPhoto(chatId,__dirname+'/image/'+id_produit+'.jpg',{caption : produit.product.name + "\n PRIX : "+produit.product.price.toString().replace('.000000','')+" Fcfa" + "\n Pour plus d'infos sur le produit tapez /"+id_produit} );
                    //console.log("hiy");
                    var the_response = {
-                    "title":produit.product.name,
+                    "title":produit.product.name +"\n"+produit.product.description.replace(/<(.|\n)*?>/g, ''),
                     "image_url":"https://github.com/durantchuente/imageproduit/raw/master/image/"+id_produit+".jpg",
-                    "subtitle":"Description: "+produit.product.description.replace(/<(.|\n)*?>/g, ''),
+                    "subtitle":"",
                     "buttons":[
                         {
                         "type":"web_url",
